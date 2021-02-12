@@ -1,0 +1,23 @@
+body{
+    background-image: url(oto.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(0, 100,0);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline flex;
+    list-style: none;
+    color:#fff;
+
+}
+    .menu-bar ul li{
+        width: 150px ;
+        margin: 15px;
+        padding:15px ;
+    }
