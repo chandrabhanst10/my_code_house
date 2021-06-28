@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="index.html"><img src="images/logo.png" alt=""></a>
+           <div class="nav-links" id=" navlinks">
+            <i class="fa fa-times"  onclick="hideMenu"></i>
+               <ul>
+                <li><a href="web.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu" ></i>
+        </nav>
+       <h1>Contact us</h1>
+
+    </section>
+   <!-- ------------Contact us content------- -->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7330.928523534262!2d77.4270394!3d23.2625746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c69d388b29381%3A0x55ae8d1b07d5e02a!2sMayur%20Vihar%20Colony%2C%20Ashok%20Vihar%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1624860701587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+   </section>
+   <section class="contact-us">
+       <div class="row">
+           <div class="contact-col">
+               <div>
+                <img class="fa" src="https://img.icons8.com/material-outlined/24/000000/address.png"/>
+                   <span>
+                       <h5>xyz road,abc building</h5>
+                       <p>Bhopal mp,ind</p>
+                   </span>
+               </div>
+               <div>
+                <img class="fa" src="images/callicon.png"/>
+                
+                   <span>
+                       <h5>+91 9874563210</h5>
+                       <p>Monday to Saturday, 10AM TO 6PM</p>
+                   </span>
+               </div>
+               <div>
+                <img class="fa" src="https://img.icons8.com/material-outlined/24/000000/mail-contact.png"/>
+                   <span>
+                       <h5>mycodehouse@gmail.com</h5>
+                       <p>Email us on</p>
+                   </span>
+               </div>
+           </div>
+           <div class="contact-col">
+
+            <form action="formhandler.php" method="POST">
+                <input name="name" type="text" placeholder="Enter your name" required>
+                <input name="email" type="email" placeholder="Enter email address" required>
+                <input name="subject"  type="text" placeholder="Enter your subject" required>
+                <textarea name="message"  rows="8" placeholder="Message" required></textarea>
+                <button class="hero-btn red-btn" type="submit">Send message</button>
+            </form>
+           </div>
+       </div>
+   </section>
+
+    
+    <!-- ---------Footer-------- -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore sed laudantium ratione tenetur? Libero, ex aliquid. Voluptates, qui perferendis similique repudiandae corporis officia ipsum explicabo voluptas non assumenda perspiciatis, voluptate est, nulla aut minima reiciendis facere laudantium adipisci. Eaque libero, unde quam amet ab accusamus quibusdam dignissimos odit! Veritatis!</p>
+        <div class="icons">
+            <img class="fa" src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"/>
+            <img class="fa" src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/>
+            <img class="fa" src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png"/>
+            <img class="fa" src="https://img.icons8.com/ios-glyphs/30/000000/instagram-circle.png"/>
+        </div>
+        <p>Made with <img class="heart" src="https://img.icons8.com/ios-glyphs/30/000000/like.png"/> mycodehouse</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-----java script for the toogl menu------> -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+       function showMenu(){
+           navlinks.style.right="0"
+           
+       }
+       function hideMenu(){
+           navlinks.style.right="-200px"
+       }
+    </script>
+    
+</body>
+</html>
